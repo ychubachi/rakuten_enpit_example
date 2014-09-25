@@ -4,7 +4,8 @@ rvm:
 deploy:
   provider: heroku
   api_key:
-    secure: T/rkhibwg2EBQhDVff/E04HWIJVivfR6vNq7aGQUq2cMizDQgi4657ykyQxljHmyrdRFdY7DuPc76qj4Zo+wTxH9OiZPrDHaxacxn8Kd6xPH4asZDsL9oiFf8dEVWS2XOIPwDHLykHr4LIcxoiepqlpGPQ1UREi/DynUJ6umgaY=
-  app: mighty-river-7140
+    secure: hNwKBQ2VS8God9r6/48DZY5wzETOrtg0uMXHQf9EfQAvh7WtC8quBFsyiFriGrgYhx4sEtx2qZU0FwGqoRGrM4SSiu7tqZg9Cye88k5hzlGBbABcQ4e2K5UwC38V7R4OyqDlTp92s/V300R7RdxpKtnbGwpObwcDnRY/8gg8SJ4=
+  app: secure-journey-5746
   on:
-    repo: ryuichiueda/rakuten_enpit_example
+    repo: ychubachi/rakuten_enpit_example
+    branch: ychubachi-master
