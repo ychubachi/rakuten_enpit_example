@@ -31,3 +31,6 @@ DEPENDENCIES
   rake
   rakuten_web_service
   sinatra
+
+BUNDLED WITH
+   1.10.3
