@@ -7,7 +7,7 @@
     </tr>
     <% @rankings.each do |ranking| %>            
     <tr>            
-      <td><%= ranking.name %></td>
+      <td><a href="/<%= itemcode %>"><%= ranking.name %></a></td>
       <td><%= ranking.price %></td>
     </tr>
     <% end %>                    
