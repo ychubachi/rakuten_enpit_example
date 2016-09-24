@@ -17,7 +17,7 @@ get '/age/:age/sex/:sex' do
 
   age = "#{params['age']}"
   sex = "#{params['sex']}"
-  if sex == 0
+  if sex.to_i == 0
     sex_title = '男性'
   else
     sex = 1
