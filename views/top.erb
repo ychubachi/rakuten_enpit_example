@@ -1,5 +1,28 @@
 <ol>
-  <li><a href="/sweets">洋菓子のランキング</a></li>
   <li><a href="/age/40/sex/0">40代男性のランキング</a></li>
   <li><a href="/age/40/sex/1">40代女性のランキング</a></li>
 </ol>
+
+<script type="text/javascript">
+  function Jump(){
+    var myURL = '/age/' + document.myForm.age.value + '/sex/' +  document.myForm.sex.value;
+    location.href = myURL;
+    return;
+  }
+  </script>
+
+</head>
+<body>
+  <h1><%= @title %></h1>
+  <div>
+    <form name="myForm">
+    <h2>あなたは幾つ？</h2>
+      <input type="text" name="age">
+    <h2>あなたは男性(0)？女性(1)？</h2>
+      <input type="text" name="sex">
+      <input type="button" value="移動" onclick="Jump();">
+    </form>
+  </div>
+</body>
+</html>
+
