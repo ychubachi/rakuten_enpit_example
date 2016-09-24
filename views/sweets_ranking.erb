@@ -10,8 +10,8 @@
     <tr>
       <td><%= ranking['itemName'] %></td>
       <td><%= ranking['itemPrice'] %></td>
-      <!--<td><a href="/sweets/"><img src="<%= ranking['smallImageUrls'][0]['imageUrl'] %>"></a></td>-->
-      <td><img src="<%= ranking['mediumImageUrls'][0]['imageUrl'] %>"></td>
+      <!--<td><a href="/sweets/"><img src="<%= ranking['smallImageUrls'][-1]['imageUrl'] %>"></a></td>-->
+      <td><a href="/sweets/"><img src="<%= ranking['mediumImageUrls'][0]['imageUrl'] %>"></a></td>
     </tr>
     <% end %>
   </table>
