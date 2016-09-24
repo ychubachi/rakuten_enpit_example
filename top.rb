@@ -5,14 +5,28 @@ require 'rakuten_web_service'
 #参考: https://github.com/k2works/sinatra_rakuten_api
 
 get '/' do
+  @title = '楽天API利用テスト'
+  erb :top
+end
+
+get '/age/:age/sex/:sex' do
   RakutenWebService.configuration do |c|
     c.application_id = ENV["APPID"]
     c.affiliate_id = ENV["AFID"]
   end
 
+  age = "#{params['age']}"
+  sex = "#{params['sex']}"
+  if sex == 0
+    sex_title = '男性'
+  else
+    sex = 1
+    sex_title = '女性'
+  end
+
   # Use genre id to fetch genre object
-  @title = '40代男性のランキング TOP30'
-  @rankings = RakutenWebService::Ichiba::Item.ranking(:age => 40, :sex => 0)
+  @title = age + '代' + sex_title + 'のランキング TOP30'
+  @rankings = RakutenWebService::Ichiba::Item.ranking(:age => age, :sex => sex)
   erb :item_ranking
 end
 

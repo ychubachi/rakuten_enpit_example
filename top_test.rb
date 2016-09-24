@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 
-require './hello'
+require './top'
 require 'minitest/autorun'
 require 'rack/test'
 
