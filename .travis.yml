@@ -1,10 +1,10 @@
 language: ruby
 rvm:
-- 2.1.2
+- 2.2.5
 deploy:
   provider: heroku
   api_key:
-    secure: T/rkhibwg2EBQhDVff/E04HWIJVivfR6vNq7aGQUq2cMizDQgi4657ykyQxljHmyrdRFdY7DuPc76qj4Zo+wTxH9OiZPrDHaxacxn8Kd6xPH4asZDsL9oiFf8dEVWS2XOIPwDHLykHr4LIcxoiepqlpGPQ1UREi/DynUJ6umgaY=
-  app: mighty-river-7140
+    secure: OQG8sVx8LmcH1c02YkJQQaH958wpOI5vu3axmjKcFyI4tWxAnkzKFLdHfNakJanrXn3nzDkdrRxKNs4GTYwfopz27WDUkEOkjRF8tcvD6H+khsdD6/abqE19X0cBN9pam6qIBF27gIsLXbyAEZYQ2BfQ+QmNotKCcMm0RoPv1GtbD/P8QRZyxoRhlSeqOL/cihPQIK2Mg+5qo8bV2XswZLv9UGqUhaVk9hVafNCqS7kbn9PlyJFE/tGXZvDMJGo6yQYawPWNJOQ23id8F7/b7yOBqldxF0wjyQZorZZANn/xsVU5JciBcikg7xiaUdBkGbzZ5+AKtulPeUHMM2VvM6hvwCHwC/OXCvNkT45DbKukH5moe8G2RY7FAWSG6RtrX2e+DyBsl5Iy2IoteA99T9Eg+arIn51HBQ6XyrmCrQXWp9seP68zAn1c6MTdNyz69YbopY5paXuMRwYS6XfCl3jXjSxZejw5evraldiZD6weV1bB5MmuAULBRVQ15BNE7lfNh5LuM4r4cY1fAPf+eDo0xrwKrKoQQ0jlsJkVNi/0Yqx4VWah9Y+iIMLzYB+BY5ief3cvFSe9Ti7Rz6eovjSg7VnTIsmiV47AEyydJVSSgtbpwmzmEteYElM90S1fcGQFlweVxphCAnxPAV+XMiVSeT1JllV+Myd6qDC79lU=
+  app: salty-dusk-33386
   on:
-    repo: ryuichiueda/rakuten_enpit_example
+    repo: terra-yucco/rakuten_enpit_example
