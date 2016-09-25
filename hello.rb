@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
 require 'rakuten_web_service'
+require 'net/http'
 
 #参考: https://github.com/k2works/sinatra_rakuten_api
 
 get '/' do
-  RakutenWebService.configuration do |c|
+  RakutenWebService.configure do |c|
     c.application_id = ENV["APPID"]
     c.affiliate_id = ENV["AFID"]
   end
